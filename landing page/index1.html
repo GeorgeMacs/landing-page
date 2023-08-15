@@ -85,6 +85,229 @@
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bolder;
       }
+      h4 {
+        color: gray;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 20px;
+        font-size: large;
+      }
+
+      /* Media Queries */
+
+      /* Small screens (up to 768px) */
+      @media (max-width: 768px) {
+        .container {
+          grid-gap: 40px;
+        }
+        .header {
+          display: grid;
+          grid-template-columns: 0.5fr 5fr 0.5fr;
+          grid-gap: 5px;
+          margin: 5% 5%;
+        }
+        .body {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr;
+        }
+        .logo img {
+          height: 50px;
+        }
+        .navbar ul {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          margin-top: 10px;
+        }
+        li a {
+          text-decoration: none;
+          text-align: center;
+          color: white;
+          font-family: "Times New Roman", Times, serif;
+          font-weight: lighter;
+          font-size: small;
+        }
+        .image img {
+          height: 77%;
+          width: 57%;
+          border-radius: 50%;
+          margin-left: 23%;
+          border-style: solid;
+          border-color: goldenrod;
+          border-width: 6px;
+        }
+        .buttons {
+          grid-template-columns: 1fr;
+          text-align: center;
+          margin-top: -10px;
+        }
+        p {
+          font-size: 10px;
+          font-weight: lighter;
+          width: 58px;
+          padding: 10px;
+          border-radius: 5px;
+          height: 10px;
+          margin-left: 29px;
+          margin-top: -30px;
+        }
+        h1 {
+          font-size: medium;
+          font-weight: bold;
+        }
+        h3 {
+          color: gray;
+          font-family: Arial, Helvetica, sans-serif;
+          line-height: 20px;
+          font-size: medium;
+          margin-top: 10px;
+          margin-left: 25px;
+        }
+        h4 {
+          font-size: small;
+          margin-left: 10px;
+        }
+        .text {
+          text-align: center;
+          margin-top: -7%;
+          margin-left: 5%;
+        }
+        .text p {
+          margin-left: 45%;
+          margin-top: 2%;
+        }
+      }
+
+      /* Medium screens (769px to 1024px) */
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .container {
+          grid-gap: 20px;
+        }
+        .header {
+          grid-template-columns: 1fr 5fr 1fr;
+          grid-gap: 5px;
+          margin: 5% 5%;
+        }
+        .logo img {
+          height: 50px;
+        }
+        .navbar ul {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          margin-top: 10px;
+        }
+        li a {
+          text-decoration: none;
+          text-align: center;
+          color: white;
+          font-family: "Times New Roman", Times, serif;
+          font-weight: lighter;
+          font-size: small;
+        }
+        .buttons {
+          grid-template-columns: 1fr;
+          text-align: center;
+          margin-top: -10px;
+        }
+        p {
+          font-size: 17px;
+          font-weight: 200;
+          width: 90px;
+          padding: 15px;
+          border-radius: 8px;
+          height: 14px;
+          margin-left: 29px;
+          margin-top: -10px;
+        }
+        .image img {
+          margin-top: 7%;
+          width: 90%;
+          height: 40%;
+        }
+        h1 {
+          font-size: 30px;
+          font-weight: bold;
+        }
+        h3 {
+          color: gray;
+          font-family: Arial, Helvetica, sans-serif;
+          line-height: 20px;
+          font-size: medium;
+          margin-top: 10px;
+          margin-left: 25px;
+        }
+        h4 {
+          font-size: large;
+          line-height: 25px;
+        }
+        .text {
+          margin-left: 15%;
+        }
+        .text p {
+          margin-left: 1px;
+        }
+      }
+
+      /* Large screens (1025px and above) */
+      @media (min-width: 1025px) {
+        .container {
+          grid-gap: 20px;
+        }
+        .header {
+          grid-template-columns: 2fr 6fr 3fr;
+          grid-gap: 20px;
+          margin: 5% 5%;
+        }
+        .logo img {
+          height: 35%;
+        }
+        .navbar ul {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          margin-top: 10px;
+        }
+        li a {
+          text-decoration: none;
+          text-align: center;
+          color: white;
+          font-family: "Times New Roman", Times, serif;
+          font-weight: lighter;
+          font-size: small;
+        }
+        .buttons {
+          grid-template-columns: 1fr;
+          text-align: center;
+          margin-top: -15px;
+        }
+        h3 {
+          margin-top: 1%;
+        }
+        p {
+          font-size: 17px;
+          font-weight: 200;
+          width: 90px;
+          padding: 15px;
+          border-radius: 8px;
+          height: 14px;
+          margin-left: 29px;
+          margin-top: -10px;
+        }
+        .image img {
+          margin-top: -8%;
+          width: 80%;
+          height: 30%;
+        }
+        .navbar ul {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        .buttons {
+          grid-template-columns: 1fr 1fr;
+          text-align: right;
+          margin-top: 0;
+        }
+        .text {
+          margin-left: 10%;
+        }
+        .text p {
+          margin-left: 1%;
+        }
+      }
     </style>
   </head>
   <body>
@@ -120,13 +343,13 @@
         </div>
         <div class="text">
           <h1>Make Easier Your Understanding of Code.</h1>
-          <h3>
+          <h4>
             Our articles offer an in-depth understanding of technological terms
             and fields, ranging from web development to machine language and
             artificial intelligence(AI). It doesn't matter how complex the field
             is, we break it down to the simplest form of understanding, making
             sure everyone is abreast to whatever technicalities involved.
-          </h3>
+          </h4>
           <p><a href="Make offer"></a>Free Trial</p>
         </div>
       </div>
